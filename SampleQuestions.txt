@@ -1,0 +1,60 @@
+1. Who founded Apple Inc.?
+	Exact Answer: Steve Jobs, Steve Wozniak, and Ronald Wayne
+	Supporting Sentence: Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell Wozniak's Apple I personal computer.
+	Supporting Article: AppleInc.txt
+
+
+2. Who supported Apple in creating a new computing platform?
+	Exact Answer: IBM, and Motorola
+	Supporting Sentence: In 1994, Apple, IBM, and Motorola formed the AIM alliance with the goal of creating a new computing platform (the PowerPC Reference Platform), which would use IBM and Motorola hardware coupled with Apple software.
+	Supporting Article: AppleInc.txt
+
+	
+3. When was Apple Inc. founded?
+	Exact Answer: April 1976
+	Supporting Sentence: Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell Wozniak's Apple I personal computer.
+	Supporting Article: AppleInc.txt
+
+
+4. When did Apple go public?
+	Exact Answer: 1980
+	Supporting Sentence: Apple went public in 1980 to instant financial success.
+	Supporting Article: AppleInc.txt
+
+	
+5. Where is Apple’s headquarters?
+	Exact Answer: Cupertino, California
+	Supporting Sentence: Apple Inc.'s world corporate headquarters are located in the middle of Silicon Valley, at 1–6 Infinite Loop, Cupertino, California.
+	Supporting Article: AppleInc.txt
+
+
+6. Where did Apple open its first retail store?
+	Exact Answer: May 19, 2001
+	Supporting Sentence: On May 19, 2001, Apple opened its first official eponymous retail stores in Virginia and California.
+	Supporting Article: AppleInc.txt
+
+	
+7. When did Abraham Lincoln die?
+	Exact Answer: April 1865 or April 15, 1865 or April 15
+	Supporting Sentence 1: Abraham Thomas Lincoln (February 12, 1809 – April 15, 1865) was an American statesman, politician, and lawyer who served as the 16th president of the United States from 1861 until his assassination in April 1865.
+	Supporting Sentence 2: After remaining in a coma for nine hours, Lincoln died at 7:22 am on April 15.
+	Supporting Article: AbrahamLincoln.txt
+
+	
+8. Where did Thomas Lincoln purchase farms?
+	Exact Answer: Kentucky
+	Supporting Sentence: Thomas Lincoln bought or leased farms in Kentucky.
+	Supporting Article: AbrahamLincoln.txt
+
+	
+9. When was the Gettysburg address by Abraham Lincoln?
+	Exact Answer: November 19, 1863
+	Supporting Sentence: Lincoln spoke at the Gettysburg battlefield cemetery on November 19, 1863
+	Supporting Article: AbrahamLincoln.txt
+
+	
+10. (BONUS): Who shot Abraham Lincoln?
+	Exact Answer: John Wilkes Booth
+	Supporting Sentences: Lincoln managed his own re-election campaign. He sought to reconcile his damaged nation by avoiding retribution against the secessionists. A few days after the Battle of Appomattox Court House, he was shot by John Wilkes Booth, an actor and Confederate sympathizer, on April 14, 1865, and died the following day. Abraham Lincoln is remembered as the United States' martyr hero.
+	Supporting Article: AbrahamLincoln.txt
+	
