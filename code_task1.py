@@ -53,7 +53,7 @@ POS_tags = nltk.pos_tag(word_tokens)
 #Dependency Graphs with Spacey:
 en_nlp =spacy.load('en_core_web_sm')
 
-temp_sent = ['My name is Aashaar', 'he was born in 1994','Apple was founded in 1998','Microsoft was founded in 1800']
+temp_sent = ['My name is Aashaar', 'he was born in 1994','Apple was founded in 1998','Microsoft was founded in 1800','Who founded Apple?','When did Abraham Lincoln die?','When was the Gettysburg address by Abraham Lincoln']
 
 dependency_parse_dict = dict()
 
@@ -64,7 +64,7 @@ for sentence in temp_sent:
     #print(doc.root)
     sent= list(doc.sents)
     for s in sent:
-        print(s.root)
+        #print(s.root)
         if s.root.text in dependency_parse_dict:
             dependency_parse_dict[s.root.text].append(s)
         else:
@@ -115,5 +115,12 @@ for word in lists:
     temp_holo.clear()
     
     
+#Named Entity Recognition:
+import en_core_web_sm
+nlp = en_core_web_sm.load()
+doc = nlp('European authorities fined Google a record $5.1 billion on Wednesday for abusing its power in the mobile phone market and ordered the company to alter its practices')
+doc = nlp('When was the Gettysburg address by Abraham Lincoln?')
+print([(X.text, X.label_) for X in doc.ents])
+
 
    
