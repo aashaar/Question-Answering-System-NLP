@@ -29,7 +29,7 @@ files = glob.glob(path)
 for name in files:
     try:
         with open(name,encoding="utf-8-sig") as f:
-            #print(f.read())
+            print(f.read())
             file = f.read()
             docs.append(file)
             word_tokens.extend(word_tokenize(file))
