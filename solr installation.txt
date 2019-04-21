@@ -1,0 +1,7 @@
+Download solr
+
+open cmd at bin's location of solr file- > 
+>> solr start
+
+see: localhost:8983
+>> solr create -c NLP_Project

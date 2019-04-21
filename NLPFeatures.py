@@ -37,7 +37,6 @@ def getNLPFeatures(sentence):
     word_tokens_all = [] # stores word tokens of all the documents in one single array
     word_tokens_all.extend(word_tokenize(sentence))   
     word_tokens = [w for w in word_tokens_all if not w in all_stops]
-    word_tokens = [] 
   
  
     #Lemmatization:

@@ -1,7 +1,7 @@
 # If on Python 2.X
-from __future__ import print_function
+#from _future_ import print_function
 import pysolr
-import untitled1 as fl
+import NLPFeatures as fl
 import glob
 import errno
 import os
@@ -9,7 +9,7 @@ from spacy import displacy
 from nltk.tokenize import sent_tokenize, word_tokenize
 # Setup a Solr instance. The timeout is optional.
 solr = pysolr.Solr('http://localhost:8983/solr/test', timeout = 1000)
-path = 'C:/Users/Santhosh/Documents/studies/MS_CS/sem4/NLP/project/Question-Answering-System-NLP/WikipediaArticles/*.txt' #note C:
+path = 'E:/UTD/4th Sem/Natural Language Processing CS 6320/Project/WikipediaArticles/*.txt'
 docs = []
 sent_tokens = []
 def readFiles(path):
@@ -34,7 +34,7 @@ def readFiles(path):
                 entities_list = []
                 entity_labels_list = []
                 for i in range(0,len(sent_tokens)):
-                    a,b,c,d,e,f,g,h,i,j = fl.getNLPFeatures(sent_tokens[i])
+                    a,b,c,d,e,f,g,h,i1,j = fl.getNLPFeatures(sent_tokens[i])
                     print("sentence", i, "done")
                     word_tokens.append(a)
                     lemmatize_word.append(b)
@@ -44,7 +44,7 @@ def readFiles(path):
                     hyponyms_list.append(f)
                     meronyms_list.append(g)
                     holonyms_list.append(h)
-                    entities_list.append(i)
+                    entities_list.append(i1)
                     entity_labels_list.append(j)
                 indexSolr(nameOfFile,doc_sentences,sent_tokens,word_tokens,lemmatize_word,rootOfSentence,
                           synonymns_list,hypernyms_list,hyponyms_list,meronyms_list,holonyms_list, entities_list, entity_labels_list)
@@ -67,6 +67,7 @@ def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSe
         doc_sentences[i]["entites_list"] = entities_list[i]
         doc_sentences[i]["entity_labels_list"] = entity_labels_list[i]
     solr.add(doc_sentences, commit = True)
+    print("Indexing done for the file")
 #
 #coreData=[
 #    {
@@ -109,7 +110,6 @@ def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSe
 #solr.delete(id=['doc_1', 'doc_2'])
 #
 ## ...or all documents.
-#solr.delete(q='*:*')
+#solr.delete(q=':')
 
 readFiles(path)
-

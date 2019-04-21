@@ -1,0 +1,233 @@
+﻿Amazon.com, Inc. (), is an American multinational technology company based in Seattle, Washington that focuses in e-commerce, cloud computing, and artificial intelligence.
+
+Amazon is the largest e-commerce marketplace and cloud computing platform in the world as measured by revenue and market capitalization. Amazon.com was founded by Jeff Bezos on July 5, 1994, and started as an online bookstore but later diversified to sell video downloads/streaming, MP3 downloads/streaming, audiobook downloads/streaming, software, video games, electronics, apparel, furniture, food, toys, and jewelry. The company also owns a publishing arm, Amazon Publishing, a film and television studio, Amazon Studios, produces consumer electronics lines including Kindle e-readers, Fire tablets, Fire TV, and Echo devices, and is the world's largest provider of cloud infrastructure services (IaaS and PaaS) through its AWS subsidiary. Amazon has separate retail websites for some countries and also offers international shipping of some of its products to certain other countries. 100 million people subscribe to Amazon Prime.
+
+Amazon is the largest Internet company by revenue in the world and the second largest employer in the United States. In 2015, Amazon surpassed Walmart as the most valuable retailer in the United States by market capitalization. In 2017, Amazon acquired Whole Foods Market for $13.4 billion, which vastly increased Amazon's presence as a brick-and-mortar retailer. The acquisition was interpreted by some as a direct attempt to challenge Walmart's traditional retail stores.
+History
+
+In 1994, Jeff Bezos incorporated Amazon. In May 1997, the organization went public. The company began selling music and videos in 1998, at which time it began operations internationally by acquiring online sellers of books in United Kingdom and Germany. The following year, the organization also sold video games, consumer electronics, home-improvement items, software, games, and toys in addition to other items.
+
+In 2002, the corporation started Amazon Web Services (AWS), which provided data on Web site popularity, Internet traffic patterns and other statistics for marketers and developers. In 2006, the organization grew its AWS portfolio when Elastic Compute Cloud (EC2), which rents computer processing power as well as Simple Storage Service (S3), that rents data storage via the Internet, were made available. That same year, the company started Fulfillment by Amazon which managed the inventory of individuals and small companies selling their belongings through the company internet site. In 2012, Amazon bought Kiva Systems to automate its inventory-management business, purchasing Whole Foods Market supermarket chain five years later in 2017.
+Board of directors
+
+As of March 2019, the board of directors is:
+
+    Jeff Bezos, President, CEO, and Chairman
+    Tom Alberg, Managing partner, Madrona Venture Group
+    Rosalind Brewer, Group President, and COO, Starbucks
+    Jamie Gorelick, partner, Wilmer Cutler Pickering Hale, and Dorr
+    Daniel P. Huttenlocher, Dean and Vice Provost, Cornell University
+    Judy McGrath, former CEO, MTV Networks
+    Indra Nooyi, former CEO, PepsiCo
+    Jon Rubinstein, former Chairman, and CEO, Palm, Inc.
+    Thomas O. Ryder, former Chairman, and CEO, Reader's Digest Association
+    Patty Stonesifer, President, and CEO, Martha's Table
+    Wendell P. Weeks, Chairman, President, and CEO, Corning Inc.
+
+Merchant partnerships
+
+In 2000, U.S. toy retailer Toys "R" Us entered into a 10-year agreement with Amazon, valued at $50 million per year plus a cut of sales, under which Toys "R" Us would be the exclusive supplier of toys and baby products on the service, and the chain's website would redirect to Amazon's Toys & Games category. In 2004, Toys "R" Us sued Amazon, claiming that because of a perceived lack of variety in Toys "R" Us stock, Amazon had knowingly allowed third-party sellers to offer items on the service in categories that Toys "R" Us had been granted exclusivity. In 2006, a court ruled in favor of Toys "R" Us, giving it the right to unwind its agreement with Amazon and establish its own independent e-commerce website. The company was later awarded $51 million in damages.
+
+In 2001, Amazon entered into a similar agreement with Borders Group, under which Amazon would co-manage Borders.com as a co-branded service, Borders pulled out of the arrangement in 2007, with plans to also launch its own online store.
+
+On October 18, 2011, Amazon.com announced a partnership with DC Comics for the exclusive digital rights to many popular comics, including Superman, Batman, Green Lantern, The Sandman, and Watchmen. The partnership has caused well-known bookstores like Barnes & Noble to remove these titles from their shelves.
+
+In November 2013, Amazon announced a partnership with the United States Postal Service to begin delivering orders on Sundays. The service, included in Amazon's standard shipping rates, initiated in metropolitan areas of Los Angeles and New York because of the high-volume and inability to deliver in a timely way, with plans to expand into Dallas, Houston, New Orleans and Phoenix by 2014.
+
+In June 2017, Nike confirmed a "pilot" partnership with Amazon to sell goods directly on the platform.
+
+As of October 11, 2017, AmazonFresh sells a range of Booths branded products for home delivery in selected areas.
+
+In September 2017, Amazon ventured with one of its sellers JV Appario Retail owned by Patni Group which has recorded a total income of US$ 104.44 million (₹ 759 crore) in financial year 2017–18.
+
+In November 2018, Amazon reached an agreement with Apple Inc. to sell selected products through the service, via the company and selected Apple Authorized Resellers. As a result of this partnership, only Apple Authorized Resellers may sell Apple products on Amazon effective January 4, 2019.
+Products and services
+
+Amazon.com's product lines available at its website include several media (books, DVDs, music CDs, videotapes and software), apparel, baby products, consumer electronics, beauty products, gourmet food, groceries, health and personal-care items, industrial & scientific supplies, kitchen items, jewelry, watches, lawn and garden items, musical instruments, sporting goods, tools, automotive items and toys & games.
+
+Amazon.com has a number of products and services available, including:
+Subsidiaries
+
+Amazon owns over 40 subsidiaries, including Zappos, Shopbop, Diapers.com, Kiva Systems (now Amazon Robotics), Audible, Goodreads, Teachstreet, Twitch and IMDb.
+A9.com
+
+A9.com, a company focused on researching and building innovative technology, has been a subsidiary since 2003.
+Amazon Maritime
+
+Amazon Maritime, Inc. holds a Federal Maritime Commission license to operate as a non-vessel-owning common carrier (NVOCC), which enables the company to manage its own shipments from China into the United States.
+Audible.com
+
+Audible.com is a seller and producer of spoken audio entertainment, information and educational programming on the Internet. Audible sells digital audiobooks, radio and TV programs and audio versions of magazines and newspapers. Through its production arm, Audible Studios, Audible has also become the world's largest producer of downloadable audiobooks. On January 31, 2008, Amazon announced it would buy Audible for about $300 million. The deal closed in March 2008 and Audible became a subsidiary of Amazon.
+Beijing Century Joyo Courier Services
+
+Beijing Century Joyo Courier Services is a subsidiary of Amazon and it applied for a freight forwarding license with the US Maritime Commission. Amazon is also building out its logistics in trucking and air freight to potentially compete with UPS and FedEx.
+Brilliance Audio
+
+Brilliance Audio is an audiobook publisher founded in 1984 by Michael Snodgrass in Grand Haven, Michigan. The company produced its first 8 audio titles in 1985. The company was purchased by Amazon in 2007 for an undisclosed amount. At the time of the acquisition, Brilliance was producing 12–15 new titles a month. It operates as an independent company within Amazon.
+
+In 1984, Brilliance Audio invented a technique for recording twice as much on the same cassette. The technique involved recording on each of the two channels of each stereo track. It has been credited with revolutionizing the burgeoning audiobook market in the mid-1980s since it made unabridged books affordable.
+ComiXology
+
+ComiXology is a cloud-based digital comics platform with over 200 million comic downloads as of September 2013. It offers a selection of more than 40,000 comic books and graphic novels across Android, iOS, Fire OS and Windows 8 devices and over a web browser. Amazon bought the company in April 2014.
+CreateSpace
+
+CreateSpace, which offers self-publishing services for independent content creators, publishers, film studios, and music labels, became a subsidiary in 2009.
+Eero
+
+Eero is a company that manufactures mesh-capable routers. The company was founded in 2015 and is based in San Francisco. Amazon announced it would buy Eero in 2019.
+Goodreads
+
+Goodreads is a "social cataloging" website founded in December 2006 and launched in January 2007 by Otis Chandler, a software engineer, and entrepreneur, and Elizabeth Chandler. The website allows individuals to freely search Goodreads' extensive user-populated database of books, annotations, and reviews. Users can sign up and register books to generate library catalogs and reading lists. They can also create their own groups of book suggestions and discussions. In December 2007, the site had over 650,000 members and over 10 million books had been added. Amazon bought the company in March 2013.
+Lab126
+
+Lab126, developers of integrated consumer electronics such as the Kindle became a subsidiary in 2004.
+Project Kuiper
+
+Amazon announced that they would fund and deploy a large broadband internet satellite constellation in April 2019, something expected to take up to a decade to fully deploy all 3,236 satellites planned for the full constellation and operationalize them to provide internet to "tens of millions of people who lack basic access to broadband internet." Amazon calls this large satellite internet constellation "Project Kuiper." Kuiper will work in concert with Amazon's previously-announced large network of 12 satellite ground station facilities (the "AWS Ground Station unit") announced in November 2018.
+Ring
+
+Ring is a home automation company founded by Jamie Siminoff in 2013. It is primarily known for its WiFi powered smart doorbells, but manufactures other devices such as security cameras. Amazon bought Ring for $1 billion USD in 2018.
+Shelfari
+
+Shelfari was a social cataloging website for books. Shelfari users built virtual bookshelves of the titles which they owned or had read and they could rate, review, tag and discuss their books. Users could also create groups that other members could join, create discussions and talk about books, or other topics. Recommendations could be sent to friends on the site for what books to read. Amazon bought the company in August 2008. Shelfari continued to function as an independent book social network within the Amazon until January 2016, when Amazon announced that it would be merging Shelfari with Goodreads and closing down Shelfari.
+Souq
+
+Souq.com is the largest e-commerce platform in the Middle East based in Dubai, United Arab Emirates. On March 28, 2017, Amazon confirmed it would be acquiring Souq.com for $580 million. Souq.com is now a subsidiary of Amazon, and acts as Amazon's arm into the Middle East region.
+Twitch
+
+Twitch is a live streaming platform for video, primarily oriented towards video gaming content. The service was first established as a spin-off of a general-interest streaming service known as Justin.tv. Its prominence was eclipsed by that of Twitch, and Justin.tv was eventually shut down by its parent company in August 2014 in order to focus exclusively on Twitch. Later that month, Twitch was acquired by Amazon for $970 million. Through Twitch, Amazon also owns Curse, Inc., an operator of video gaming communities and a provider of VoIP services for gaming. Since the acquisition, Twitch began to sell games directly through the platform, and began offering special features for Amazon Prime subscribers.
+
+The site's rapid growth had been boosted primarily by the prominence of major esports competitions on the service, leading GameSpot senior esports editor Rod Breslau to have described the service as "the ESPN of esports". As of 2015, the service had over 1.5 million broadcasters and 100 million monthly viewers.
+Whole Foods Market
+
+Whole Foods Market is an American supermarket chain exclusively featuring foods without artificial preservatives, colors, flavors, sweeteners, and hydrogenated fats.
+
+On August 23, 2017, it was reported that the Federal Trade Commission approved the merger between Amazon.com and Whole Foods Market. The following day it was announced that the deal would be closed on August 28, 2017.
+Junglee
+
+Junglee is a former online shopping service provided by Amazon that enabled customers to search for products from online and offline retailers in India. Junglee started off as a virtual database that was used to extract information off the internet and deliver it to enterprise applications. As it progressed, Junglee started to use its database technology to create a single window marketplace on the internet by making every item from every supplier available for purchase. Web shoppers could locate, compare and transact millions of products from across the Internet shopping mall through one window.
+
+Amazon acquired Junglee in 1998, and the website Junglee.com was launched in India in February 2012 as a comparison-shopping website. It curated and enabled searching for a diverse variety of products such as clothing, electronics, toys, jewelry and video games, among others, across thousands of online and offline sellers. Millions of products are browse-able, whereby the client selects a price, and then they are directed to a seller. In November 2017, Amazon closed down Junglee.com and the former domain currently redirects to Amazon India.
+Website
+
+The domain amazon.com attracted at least 615 million visitors annually by 2008. Amazon attracts over 130 million customers to its US website per month by the start of 2016. The company has also invested heavily on a massive amount of server capacity for its website, especially to handle the excessive traffic during the December Christmas holiday season.
+
+Results generated by Amazon's search engine are partly determined by promotional fees.
+
+Amazon's localized storefronts, which differ in selection and prices, are differentiated by top-level domain and country code:
+Reviews
+
+Amazon allows users to submit reviews to the web page of each product. Reviewers must rate the product on a rating scale from one to five stars. Amazon provides a badging option for reviewers which indicate the real name of the reviewer (based on confirmation of a credit card account) or which indicate that the reviewer is one of the top reviewers by popularity. Customers may comment or vote on the reviews, indicating whether they found a review helpful to them. If a review is given enough "helpful" hits, it appears on the front page of the product. In 2010, Amazon was reported as being the largest single source of Internet consumer reviews.
+
+When publishers asked Bezos why Amazon would publish negative reviews, he defended the practice by claiming that Amazon.com was "taking a different approach ... we want to make every book available—the good, the bad and the ugly ... to let truth loose".
+
+There have been cases of positive reviews being written and posted by public relations companies on behalf of their clients and instances of writers using pseudonyms to leave negative reviews of their rivals' works.
+Content search
+
+"Search Inside the Book" is a feature which allows customers to search for keywords in the full text of many books in the catalog. The feature started with 120,000 titles (or 33 million pages of text) on October 23, 2003. There are about 300,000 books in the program. Amazon has cooperated with around 130 publishers to allow users to perform these searches.
+
+To avoid copyright violations, Amazon does not return the computer-readable text of the book. Instead, it returns a picture of the matching page, instructs the web browser to disable printing and puts limits on the number of pages in a book a single user can access. Additionally, customers can purchase online access to some of the same books via the "Amazon Upgrade" program.
+Third-party sellers
+
+Amazon derives many of its sales (around 40% in 2008) from third-party sellers who sell products on Amazon. Associates receive a commission for referring customers to Amazon by placing links to Amazon on their websites if the referral results in a sale. Worldwide, Amazon has "over 900,000 members" in its affiliate programs. In the middle of 2014, the Amazon Affiliate Program is used by 1.2% of all websites and it is the second most popular advertising network after Google Ads. It is frequently used by websites and non-profits to provide a way for supporters to earn them a commission. Amazon reported over 1.3 million sellers sold products through Amazon's websites in 2007. Unlike eBay, Amazon sellers do not have to maintain separate payment accounts; all payments are handled by Amazon.
+
+Associates can access the Amazon catalog directly on their websites by using the Amazon Web Services (AWS) XML service. A new affiliate product, aStore, allows Associates to embed a subset of Amazon products within another website, or linked to another website. In June 2010, Amazon Seller Product Suggestions was launched (rumored to be internally called "Project Genesis") to provide more transparency to sellers by recommending specific products to third-party sellers to sell on Amazon. Products suggested are based on customers' browsing history.
+Amazon sales rank
+
+The Amazon sales rank (ASR) provides an indication of the popularity of a product sold on any Amazon locale. It is a relative indicator of popularity that is updated hourly. Effectively, it is a "best sellers list" for the millions of products stocked by Amazon. While the ASR has no direct effect on the sales of a product, it is used by Amazon to determine which products to include in its bestsellers lists. Products that appear in these lists enjoy additional exposure on the Amazon website and this may lead to an increase in sales. In particular, products that experience large jumps (up or down) in their sales ranks may be included within Amazon's lists of "movers and shakers"; such a listing provides additional exposure that might lead to an increase in sales. For competitive reasons, Amazon does not release actual sales figures to the public. However, Amazon has now begun to release point of sale data via the Nielsen BookScan service to verified authors. While the ASR has been the source of much speculation by publishers, manufacturers, and marketers, Amazon itself does not release the details of its sales rank calculation algorithm. Some companies have analyzed Amazon sales data to generate sales estimates based on the ASR, though Amazon states:
+
+    Please keep in mind that our sales rank figures are simply meant to be a guide of general interest for the customer and not definitive sales information for publishers—we assume you have this information regularly from your distribution sources
+
+Multi-level sales strategy
+
+Amazon employs a multi-level e-commerce strategy. Amazon started by focusing on business-to-consumer relationships between itself and its customers and business-to-business relationships between itself and its suppliers and then moved to facilitate customer-to-customer with the Amazon marketplace which acts as an intermediary to facilitate transactions. The company lets anyone sell nearly anything using its platform. In addition to an affiliate program that lets anyone post-Amazon links and earn a commission on click-through sales, there is now a program which lets those affiliates build entire websites based on Amazon's platform.
+
+Some other large e-commerce sellers use Amazon to sell their products in addition to selling them through their own websites. The sales are processed through Amazon.com and end up at individual sellers for processing and order fulfillment and Amazon leases space for these retailers. Small sellers of used and new goods go to Amazon Marketplace to offer goods at a fixed price.
+
+Amazon also employs the use of drop shippers or meta sellers. These are members or entities that advertise goods on Amazon who order these goods direct from other competing websites but usually from other Amazon members. These meta sellers may have millions of products listed, have large transaction numbers and are grouped alongside other less prolific members giving them credibility as just someone who has been in business for a long time. Markup is anywhere from 50% to 100% and sometimes more, these sellers maintain that items are in stock when the opposite is true. As Amazon increases their dominance in the marketplace these drop shippers have become more and more commonplace in recent years.
+
+In November 2015, Amazon opened a physical Amazon Books store in University Village in Seattle. The store is 5,500 square feet and prices for all products match those on its website. Amazon will open its tenth physical book store in 2017; media speculation suggests Amazon plans to eventually roll out 300 to 400 bookstores around the country.
+
+Amazon plans to open brick and mortar bookstores in Germany.
+Finances
+
+Amazon.com is primarily a retail site with a sales revenue model; Amazon takes a small percentage of the sale price of each item that is sold through its website while also allowing companies to advertise their products by paying to be listed as featured products. As of 2018, Amazon.com is ranked 8th on the Fortune 500 rankings of the largest United States corporations by total revenue.
+
+For the fiscal year 2017, Amazon reported earnings of US$3.03 billion, with an annual revenue of US$177.866 billion, an increase of 30.8% over the previous fiscal cycle. Since 2007 sales increased from 14.835 billion to 177.866 billion, thanks to continued business expansion. Amazon's market capitalization was valued at over US$803 billion in early November 2018.
+Controversies
+
+Since its founding, the company has attracted criticism and controversy for its actions, including: supplying law enforcement with facial recognition surveillance tools; forming cloud computing partnerships with the CIA; leading customers away from bookshops; adversely impacting the environment; placing a low priority on warehouse conditions for workers; actively opposing unionization efforts; remotely deleting content purchased by Amazon Kindle users; taking public subsidies; seeking to patent its 1-Click technology; engaging in anti-competitive actions and price discrimination; and reclassifying LGBT books as adult content. Criticism has also concerned various decisions over whether to censor or publish content such as the WikiLeaks website, works containing libel and material facilitating dogfight, cockfight, or pedophile activities. In December 2011, Amazon faced a backlash from small businesses for running a one-day deal to promote its new Price Check app. Shoppers who used the app to check prices in a brick-and-mortar store were offered a 5% discount to purchase the same item from Amazon. Companies like Groupon, eBay and Taap.it countered Amazon's promotion by offering $10 off from their products. The company has also faced accusations of putting undue pressure on suppliers to maintain and extend its profitability. One effort to squeeze the most vulnerable book publishers was known within the company as the Gazelle Project, after Bezos suggested, according to Brad Stone, "that Amazon should approach these small publishers the way a cheetah would pursue a sickly gazelle." In July 2014, the Federal Trade Commission launched a lawsuit against the company alleging it was promoting in-app purchases to children, which were being transacted without parental consent.
+Environmental impact
+
+In November 2018, a community action group opposed the construction permit delivered to Goodman Group for the construction of a 160,000 square metres (1,700,000 sq ft) logisitics platform Amazon will operate at Lyon–Saint-Exupéry Airport. In February 2019, Étienne Tête filed a request on behalf of a second regional community action group asking the administrative court to decide whether the platform served a sufficiently important public interest to justify its environmental impact. Construction has been suspended while these matters are decided.
+Selling counterfeit items
+
+On October 16, 2016, Apple filed a trademark infringement case against Mobile Star LLC for selling counterfeit Apple products to Amazon. In the suit, Apple provided evidence that Amazon was selling these counterfeit Apple products and advertising them as genuine. Through purchasing, Apple found that it was able to identify counterfeit products with a success rate of 90%. Amazon was sourcing and selling items without properly determining if they are genuine. Mobile Star LLC settled with Apple for an undisclosed amount on April 27, 2017.
+Sales and use taxes
+
+Amazon's state sales tax collection policy has changed over the years since it did not collect any sales taxes in its early years. In the U.S., state and local sales taxes are levied by state and local governments, not at the federal level. In most countries where Amazon operates, a sales tax or value added tax is uniform throughout the country, and Amazon is obliged to collect it from all customers. Proponents of forcing Amazon.com to collect sales tax—at least in states where it maintains a physical presence—argue the corporation wields an anti-competitive advantage over storefront businesses forced to collect sales tax.
+
+Many U.S. states in the 21st century have passed online shopping sales tax laws designed to compel Amazon.com and other e-commerce retailers to collect state and local sales taxes from its customers. Amazon.com originally collected sales tax only from five states as of 2011, but as of April 2017, Amazon collects sales taxes from customers in all 45 states that have a state sales tax and in Washington, D.C.
+Income taxes
+
+Amazon paid no federal income taxes in the U.S. in 2017 and 2018, and actually got tax refunds worth millions of dollars, despite recording several billion dollars in profits each year. CNN reported that Amazon's tax bill was zero because they took advantage of provisions in years when they were losing money that allowed them to offset future taxes on profits, as well as various other tax credits. Amazon was criticized by political figures for not paying federal income taxes.
+Comments by Donald Trump and Bernie Sanders
+
+In early 2018, President Donald Trump repeatedly criticized Amazon's use of the United States Postal Service and its prices for the delivery of packages, stating, "I am right about Amazon costing the United States Post Office massive amounts of money for being their Delivery Boy," Trump tweeted. "Amazon should pay these costs (plus) and not have them bourne [sic] by the American Taxpayer." Amazon's shares fell by 6 percent as a result of Trump's comments. Shepard Smith of Fox News disputed Trump's claims and pointed to evidence that the USPS was offering below-market prices to all customers with no advantage to Amazon. However, analyst Tom Forte pointed to the fact that Amazon's payments to the USPS are not made public and that their contract has a reputation for being "a sweetheart deal".
+
+Throughout the summer of 2018, Vermont Senator Bernie Sanders criticized Amazon's wages and working conditions in a series of YouTube videos and media appearances. He also pointed to the fact that Amazon had paid no federal income tax in the previous year. Sanders solicited stories from Amazon warehouse workers who felt exploited by the company. One such story, by James Bloodworth, described the environment as akin to "a low-security prison" and stated that the company's culture used an Orwellian newspeak. These reports cited a finding by New Food Economy that one third of fulfilment center workers in Arizona were on the Supplemental Nutrition Assistance Program (SNAP). Responses by Amazon included incentives for employees to tweet positive stories and a statement which called the salary figures used by Sanders "inaccurate and misleading". The statement also charged that it was inappropriate for him to refer to SNAP as "food stamps". On September 5, 2018, Sanders along with Ro Khanna introduced the Stop Bad Employers by Zeroing Out Subsidies (Stop BEZOS) Act aimed at Amazon and other alleged beneficiaries of corporate welfare such as Walmart, McDonald's and Uber. Among the bill's supporters were Tucker Carlson of Fox News and Matt Taibbi who criticized himself and other journalists for not covering Amazon's contribution to wealth inequality earlier.
+
+On October 2, Amazon announced that its minimum wage for all American employees would be raised to $15 per hour. Sanders congratulated the company for making this decision.
+Working conditions
+
+Amazon has attracted widespread criticism for poor working conditions by both current employees and former employees, as well as the media and politicians. In 2011, it was publicized that at the Breinigsville, Pennsylvania warehouse, workers had to carry out work in 100 °F (38 °C) heat, resulting in employees becoming extremely uncomfortable and suffering from dehydration and collapse. Loading-bay doors were not opened to allow in fresh air, because of concerns over theft. Amazon's initial response was to pay for an ambulance to sit outside on call to cart away overheated employees. The company eventually installed air conditioning at the warehouse.
+
+Some workers, "pickers", who travel the building with a trolley and a handheld scanner "picking" customer orders can walk up to 15 miles during their workday and if they fall behind on their targets, they can be reprimanded. The handheld scanners give real-time information to the employee on how quickly or slowly they are working; the scanners also serve to allow Team Leads and Area Managers to track the specific locations of employees and how much "idle time" they gain when not working.
+
+In a German television report broadcast in February 2013, journalists Diana Löbl and Peter Onneken conducted a covert investigation at the distribution center of Amazon in the town of Bad Hersfeld in the German state of Hessen. The report highlights the behavior of some of the security guards, themselves being employed by a third party company, who apparently either had a neo-Nazi background or deliberately dressed in neo-Nazi apparel and who were intimidating foreign and temporary female workers at its distribution centers. The third party security company involved was delisted by Amazon as a business contact shortly after that report.
+
+In March 2015, it was reported in The Verge that Amazon will be removing non-compete clauses of 18 months in length from its US employment contracts for hourly-paid workers, after criticism that it was acting unreasonably in preventing such employees from finding other work. Even short-term temporary workers have to sign contracts that prohibit them from working at any company where they would "directly or indirectly" support any good or service that competes with those they helped support at Amazon, for 18 months after leaving Amazon, even if they are fired or made redundant.
+
+A 2015 front-page article in The New York Times profiled several former Amazon employees who together described a "bruising" workplace culture in which workers with illness or other personal crises were pushed out or unfairly evaluated. Bezos responded by writing a Sunday memo to employees, in which he disputed the Times's account of "shockingly callous management practices" that he said would never be tolerated at the company.
+
+In an effort to boost employee morale, on November 2, 2015, Amazon announced that it would be extending six weeks of paid leave for new mothers and fathers. This change includes birth parents and adoptive parents and can be applied in conjunction with existing maternity leave and medical leave for new mothers.
+
+In mid-2018, investigations by journalists and media outlets such as The Guardian reported poor working conditions at Amazon's fulfillment centers. Later in 2018, another article exposed poor working conditions for Amazon's delivery drivers.
+
+In response to criticism that Amazon doesn't pay its workers a livable wage, Jeff Bezos announced beginning November 1, 2018, all U.S. and U.K. Amazon employees will earn a $15 an hour minimum wage. Amazon will also lobby to make $15 an hour the federal minimum wage. At the same time, Amazon also eliminated stock awards and bonuses for hourly employees.
+
+On Black Friday 2018, Amazon warehouse workers in several European countries, including Italy, Germany, Spain and the United Kingdom, went on strike to protest inhumane working conditions and low pay.
+
+The Daily Beast reported in March 2019 that emergency services responded to 189 calls from 46 Amazon warehouses in 17 states between the years 2013 and 2018, all relating to suicidal employees. The workers attributed their mental breakdowns to employer-imposed social isolation, aggressive surveillance, and the hurried and dangerous working conditions at these fulfillment centers. One former employee told The Daily Beast "It's this isolating colony of hell where people having breakdowns is a regular occurrence."
+Conflict of interest with the CIA and DOD
+
+In 2013, Amazon secured a US$600 million contract with the CIA, which poses a potential conflict of interest involving the Bezos-owned The Washington Post and his newspaper's coverage of the CIA. Kate Martin, director of the Center for National Security Studies, said, "It's a serious potential conflict of interest for a major newspaper like The Washington Post to have a contractual relationship with the government and the most secret part of the government." This was later followed by a US$10 billion contract with the Department of Defence.
+Seattle head tax and houselessness services
+
+In May 2018, Amazon threatened the Seattle City Council over an employee head tax proposal that would have funded houselessness services and low-income housing. The tax would have cost Amazon about $800 per employee, or 0.7% of their average salary. In retaliation, Amazon paused construction on a new building, threatened to limit further investment in the city, and funded a repeal campaign. Although originally passed, the measure was soon repealed after an expensive repeal campaign spearheaded by Amazon.
+Nashville Operations Center of Excellence
+
+The incentives given by the Metropolitan Council of Nashville and Davidson County to Amazon for their new Operations Center of Excellence in Nashville Yards, a site owned by developer Southwest Value Partners, have been controversial, including the decision by the Tennessee Department of Economic and Community Development to keep the full extent of the agreement secret. The incentives include "$102 million in combined grants and tax credits for a scaled-down Amazon office building" as well as "a $65 million cash grant for capital expenditures" in exchange for the creation of 5,000 jobs over seven years.
+
+The Tennessee Coalition for Open Government called for more transparency. Another local organization known as the People's Alliance for Transit, Housing, and Employment (PATHE) suggested no public money should be given to Amazon; instead, it should be spent on building more public housing for the working poor and the homeless and investing in more public transportation for Nashvillians. Others suggested incentives to big corporations don't improve the local economy.
+
+In November 2018, the proposal to give Amazon $15 million in incentives was criticized by the Nashville Firefighters Union and the Nashville chapter of the Fraternal Order of Police, who called it "corporate welfare." In February 2019, another $15.2 million in infrastructure was approved by the council, although it was voted down by three council members, including Councilwoman Angie Henderson who dismissed it as "cronyism".
+Facial recognition technology and law enforcement
+
+While Amazon has publicly opposed secret government surveillance, as revealed by Freedom of Information Act requests it has supplied facial recognition support to law enforcement in the form of the Rekognition technology and consulting services. Initial testing included the city of Orlando, Florida, and Washington County, Oregon. Amazon offered to connect Washington County with other Amazon government customers interested in Rekognition and a body camera manufacturer. These ventures are opposed by a coalition of civil rights groups with concern that they could lead to an expansion of surveillance and be prone to abuse. Specifically, it could automate the identification and tracking of anyone, particularly in the context of potential police body camera integration. Because of the backlash, the city of Orlando has publicly stated it will no longer use the technology.
+Lobbying
+
+Amazon lobbies the United States federal government and state governments on issues such as the enforcement of sales taxes on online sales, transportation safety, privacy and data protection and intellectual property. According to regulatory filings, Amazon.com focuses its lobbying on the United States Congress, the Federal Communications Commission and the Federal Reserve. Amazon.com spent roughly $3.5 million, $5 million and $9.5 million on lobbying, in 2013, 2014 and 2015, respectively.
+
+Amazon.com was a corporate member of the American Legislative Exchange Council (ALEC) until it dropped membership following protests at its shareholders' meeting on May 24, 2012.
+
+In 2014, Amazon expanded its lobbying practices as it prepared to lobby the Federal Aviation Administration to approve its drone delivery program, hiring the Akin Gump Strauss Hauer & Feld lobbying firm in June. Amazon and its lobbyists have visited with Federal Aviation Administration officials and aviation committees in Washington, D.C. to explain its plans to deliver packages.
+See also
+
+    Amazon Breakthrough Novel Award
+    Amazon Flexible Payments Service
+    Amazon Marketplace
+    Amazon Standard Identification Number (ASIN)
+    Camelcamelcamel – a website that tracks the prices of products sold on Amazon.com
+    List of book distributors
+    Statistically improbable phrases – Amazon.com's phrase extraction technique for indexing books

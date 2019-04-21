@@ -1,4 +1,4 @@
-1. Who founded Apple Inc.?
+﻿1. Who founded Apple Inc.?
 	Exact Answer: Steve Jobs, Steve Wozniak, and Ronald Wayne
 	Supporting Sentence: Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell Wozniak's Apple I personal computer.
 	Supporting Article: AppleInc.txt
@@ -29,7 +29,8 @@
 
 
 6. Where did Apple open its first retail store?
-	Exact Answer: May 19, 2001
+	Exact Answer 1: Virginia
+	Exact Answer 2: California
 	Supporting Sentence: On May 19, 2001, Apple opened its first official eponymous retail stores in Virginia and California.
 	Supporting Article: AppleInc.txt
 
@@ -52,9 +53,83 @@
 	Supporting Sentence: Lincoln spoke at the Gettysburg battlefield cemetery on November 19, 1863
 	Supporting Article: AbrahamLincoln.txt
 
-	
-10. (BONUS): Who shot Abraham Lincoln?
+
+10. Who founded UTD?
+	Exact Answer 1: Eugene McDermott
+	Exact Answer 2: Cecil Howard Green
+	Exact Answer 3: J. Erik Jonsson
+	Supporting Sentence: The UT Dallas founders, Eugene McDermott, Cecil Howard Green and J. Erik Jonsson, purchased Geophysical Service Incorporated (GSI) on December 6, 1941, the day before the attack on Pearl Harbor.
+	Supporting Article: UTD.txt
+
+
+11. When was UTD established?
+	Exact Answer: June 13, 1969
+	Supporting Sentence: On June 13, 1969 Governor Preston Smith signed the bill adding the institution to the University of Texas System and creating the University of Texas at Dallas.
+	Supporting Article: UTD.txt
+
+
+12. Where was Melinda born?
+	Exact Answer: Dallas, Texas
+	Supporting Sentence: Melinda Ann French was born on August 15, 1964 in Dallas, Texas.
+	Supporting Article: MelindaGates.txt
+
+
+13. Where is the birth place of Oprah Winfrey?
+	Exact Answer: Mississippi
+	Supporting Sentence: Winfrey was born into poverty in rural Mississippi to a teenage single mother and later raised in inner-city Milwaukee. 
+	Supporting Article: OprahWifrey.txt
+
+14. Where is the headquarters of AT&T?
+	Exact Answer: Dallas, Texas
+	Supporting Sentence: AT&T Inc. is an American multinational conglomerate holding company headquartered at Whitacre Tower in Downtown Dallas, Texas.
+	Supporting Article: AT_T.txt
+
+
+15. Where did AT&T spread to South America?
+	Exact Answer: September 2013
+	Supporting Sentence: In September 2013, AT&T Inc. announced it would expand into Latin America through a collaboration with América Móvil.
+	Supporting Article: AT_T.txt
+
+
+16. When did Warren Buffett buy Berkshire Hathaway's shares?
+	Exact Answer: 1962
+	Supporting Sentence: In 1962, Warren Buffett began buying stock in Berkshire Hathaway after noticing a pattern in the price direction of its stock whenever the company closed a mill. 
+	Supporting Article: Berkshire_Hathaway.txt
+
+
+17. When did Steve Jobs die?
+	Exact Answer: October 5, 2011
+	Supporting Sentence: On October 5, 2011, at the age of 56, Steve Jobs, the CEO of Apple, died due to complications from a relapse of his previously treated islet-cell neuroendocrine pancreatic cancer.
+	Supporting Article: LaurenePowellJobs.txt
+
+
+18. Where is the headquarters of Exxon Mobil?
+	Exact Answer: Irving, Texas
+	Supporting Sentence: Exxon Mobil Corporation, doing business as ExxonMobil, is an American multinational oil and gas corporation headquartered in Irving, Texas. 
+	Supporting Article: ExxonMobil.txt
+
+
+19. When was ExxonMobile created?
+	Exact Answer: 1999
+	Supporting Sentence: ExxonMobil was formed in 1999 by the merger of two major oil companies, Exxon and Mobil.
+	Supporting Article: ExxonMobil.txt
+
+
+20. Where is the headquarters of Amazon.com?
+	Exact Answer: Seattle, Washington
+	Supporting Sentence: Amazon.com, Inc. (), is an American multinational technology company based in Seattle, Washington that focuses in e-commerce, cloud computing, and artificial intelligence.
+	Supporting Article: Amazon_com.txt
+
+
+
+Hard Questions (Bonus Only):
+
+1. Who shot Abraham Lincoln?
 	Exact Answer: John Wilkes Booth
 	Supporting Sentences: Lincoln managed his own re-election campaign. He sought to reconcile his damaged nation by avoiding retribution against the secessionists. A few days after the Battle of Appomattox Court House, he was shot by John Wilkes Booth, an actor and Confederate sympathizer, on April 14, 1865, and died the following day. Abraham Lincoln is remembered as the United States' martyr hero.
 	Supporting Article: AbrahamLincoln.txt
 	
+2. Where is UTD located?
+	Exact Answer: Richardson, Texas
+	Supporting Sentences: The University of Texas at Dallas (UTD or UT Dallas) is a public research university in the University of Texas System. The main campus is in the Richardson, Texas, Telecom Corridor, 18 miles (29 km) north of Downtown Dallas.
+	Supporting Article: UTD.txt
