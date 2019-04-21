@@ -33,11 +33,11 @@ sent_tokens = [] # stores sentence tokens of all the documents in one single arr
 
 
 def getNLPFeatures(sentence):
-    
+#    print(sentence)
     word_tokens_all = [] # stores word tokens of all the documents in one single array
     word_tokens_all.extend(word_tokenize(sentence))   
     word_tokens = [w for w in word_tokens_all if not w in all_stops]
-    word_tokens = [] 
+#    word_tokens = [] 
   
  
     #Lemmatization:
@@ -78,24 +78,17 @@ def getNLPFeatures(sentence):
     
     entities = []
     entity_labels = []
-    #Named Entity Recognition:
+#    Named Entity Recognition:
     import en_core_web_sm
     nlp = en_core_web_sm.load()
     doc = nlp(sentence)
     for X in doc.ents:
         entities.append(X.text)
         entity_labels.append(X.label_)        
+#    
     return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels
     
      
- #synonyms_list, hypenyms_list, meronyms_dict, holonyms_dict, entities_list
-#    
-##Named Entity Recognition:
-#import en_core_web_sm
-#nlp = en_core_web_sm.load()
-#doc = nlp('European authorities fined Google a record $5.1 billion on Wednesday for abusing its power in the mobile phone market and ordered the company to alter its practices')
-#doc = nlp('When was the Gettysburg address by Abraham Lincoln?')
-#print([(X.text, X.label_) for X in doc.ents])
-#
+
 #
    
