@@ -8,7 +8,7 @@ import os
 from spacy import displacy
 from nltk.tokenize import sent_tokenize, word_tokenize
 # Setup a Solr instance. The timeout is optional.
-solr = pysolr.Solr('http://localhost:8983/solr/test', timeout = 1000)
+solr = pysolr.Solr('http://localhost:8983/solr/test2', timeout = 1000)
 path = 'E:/UTD/4th Sem/Natural Language Processing CS 6320/Project/WikipediaArticles/*.txt'
 docs = []
 sent_tokens = []
@@ -16,7 +16,7 @@ def readFiles(path):
     files = glob.glob(path)
     for name in files:
         nameOfFile = (os.path.basename(name))
-        print(nameOfFile)
+        print("Started indexing for ",nameOfFile)
         try:
             with open(name,encoding="utf-8-sig") as f:
                 file = f.read()
@@ -35,7 +35,7 @@ def readFiles(path):
                 entity_labels_list = []
                 for i in range(0,len(sent_tokens)):
                     a,b,c,d,e,f,g,h,i1,j = fl.getNLPFeatures(sent_tokens[i])
-                    print("sentence", i, "done")
+                    #print("sentence", i, "done")
                     word_tokens.append(a)
                     lemmatize_word.append(b)
                     rootOfSentence.append(c)
@@ -67,7 +67,7 @@ def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSe
         doc_sentences[i]["entites_list"] = entities_list[i]
         doc_sentences[i]["entity_labels_list"] = entity_labels_list[i]
     solr.add(doc_sentences, commit = True)
-    print("Indexing done for the file")
+    print("*******************Indexing done for the file ",name)
 #
 #coreData=[
 #    {

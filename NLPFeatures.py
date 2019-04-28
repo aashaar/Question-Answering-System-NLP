@@ -88,8 +88,8 @@ def getNLPFeatures(sentence):
     for X in doc.ents:
         entities.append(X.text)
         entity_labels.append(X.label_)        
-    print(set(hypernyms_list))
-    #return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels
+    #print(set(hypernyms_list))
+    return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels
     
      
 
