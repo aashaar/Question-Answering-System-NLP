@@ -5,3 +5,6 @@ open cmd at bin's location of solr file- >
 
 see: localhost:8983
 >> solr create -c NLP_Project
+
+for spacy(en_core_web_sm ):
+conda install -c conda-forge spacy-model-en_core_web_sm 

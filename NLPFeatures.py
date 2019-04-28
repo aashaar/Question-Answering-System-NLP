@@ -37,10 +37,10 @@ def getNLPFeatures(sentence):
     word_tokens_all = [] # stores word tokens of all the documents in one single array
     word_tokens_all.extend(word_tokenize(sentence))   
     word_tokens = [w for w in word_tokens_all if not w in all_stops]
-<<<<<<< HEAD
-=======
+
+
 #    word_tokens = [] 
->>>>>>> b43b6f17b5fa934d545299e7b03c6e777a0eed2d
+
   
  
     #Lemmatization:
@@ -88,10 +88,10 @@ def getNLPFeatures(sentence):
     for X in doc.ents:
         entities.append(X.text)
         entity_labels.append(X.label_)        
-#    
-    return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels
+    print(set(hypernyms_list))
+    #return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels
     
      
 
 #
-   
+    
