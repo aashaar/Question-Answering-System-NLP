@@ -21,6 +21,7 @@ def readFiles(path):
             with open(name,encoding="utf-8-sig") as f:
                 file = f.read()
                 docs.append(file)
+                sent_tokens = [] ## bugfix
                 sent_tokens.extend(sent_tokenize(file))
                 doc_sentences = [dict() for x in range(len(sent_tokens))]
                 word_tokens=[]
@@ -64,7 +65,7 @@ def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSe
         doc_sentences[i]["hypernyms_list"] = hypernyms_list[i]
         doc_sentences[i]["hyponyms_list"] = hyponyms_list[i] 
         doc_sentences[i]["meronyms_list"] = meronyms_list[i]
-        doc_sentences[i]["entites_list"] = entities_list[i]
+        doc_sentences[i]["entities_list"] = entities_list[i]
         doc_sentences[i]["entity_labels_list"] = entity_labels_list[i]
     solr.add(doc_sentences, commit = True)
     print("*******************Indexing done for the file ",name)

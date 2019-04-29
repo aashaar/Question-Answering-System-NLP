@@ -4,11 +4,11 @@ from nltk.tokenize import word_tokenize
 import NLPFeatures as fl
 import en_core_web_sm
 import spacy
-import en_core_web_sm
 nlp = en_core_web_sm.load()
 from nltk.corpus import wordnet as wn
 import pysolr   
 en_nlp =spacy.load('en_core_web_sm')
+from nltk.stem.wordnet import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
 #,"WHO is Abraham Lincoln killed?","Where is Abraham Lincoln killed?"
 solr = pysolr.Solr('http://localhost:8983/solr/test', timeout=10)   
@@ -46,7 +46,7 @@ for sentence in input_sentences:
     query= "entity_labels_list:"+",".join(req_entity_type)+" AND "
     #print(query)
     for token in filtered_question:
-        query += "(word_tokens:\""+token+"\" OR lemmatize_word:\""+lemmatizer.lemmatize(token)+"\" OR synonymns_list:\""+token+"\" OR hypernyms_list:\""+token+"\" OR meronyms_list:\""+token+"\" OR entites_list:\""+token+"\") AND "
+        query += "(word_tokens:\""+token+"\" OR lemmatize_word:\""+lemmatizer.lemmatize(token)+"\" OR synonymns_list:\""+token+"\" OR hypernyms_list:\""+token+"\" OR meronyms_list:\""+token+"\" OR entities_list:\""+token+"\") AND "
     query = query[:-4]
     print(query)
     print("*********************************")
