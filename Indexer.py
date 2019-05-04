@@ -8,8 +8,8 @@ import os
 from spacy import displacy
 from nltk.tokenize import sent_tokenize, word_tokenize
 # Setup a Solr instance. The timeout is optional.
-solr = pysolr.Solr('http://localhost:8983/solr/test2', timeout = 1000)
-path = 'E:/UTD/4th Sem/Natural Language Processing CS 6320/Project/WikipediaArticles/*.txt'
+solr = pysolr.Solr('http://localhost:8983/solr/test3', timeout = 1000)
+path = 'C:/Users/Santhosh/Documents/studies/MS_CS/sem4/NLP/project/Question-Answering-System-NLP/WikipediaArticles/*.txt'
 docs = []
 sent_tokens = []
 def readFiles(path):
