@@ -9,7 +9,7 @@ from spacy import displacy
 from nltk.tokenize import sent_tokenize, word_tokenize
 # Setup a Solr instance. The timeout is optional.
 solr = pysolr.Solr('http://localhost:8983/solr/test3', timeout = 1000)
-path = 'C:/Users/Santhosh/Documents/studies/MS_CS/sem4/NLP/project/Question-Answering-System-NLP/WikipediaArticles/*.txt'
+path = 'E:/UTD/4th Sem/Natural Language Processing CS 6320/Project/WikipediaArticles/*.txt'
 docs = []
 sent_tokens = []
 def readFiles(path):
@@ -19,6 +19,7 @@ def readFiles(path):
         print("Started indexing for ",nameOfFile)
         try:
             with open(name,encoding="utf-8-sig") as f:
+            #with open(name,encoding="latin-1") as f:
                 file = f.read()
                 docs.append(file)
                 sent_tokens = [] ## bugfix
@@ -49,7 +50,7 @@ def readFiles(path):
                     entity_labels_list.append(j)
                 indexSolr(nameOfFile,doc_sentences,sent_tokens,word_tokens,lemmatize_word,rootOfSentence,
                           synonymns_list,hypernyms_list,hyponyms_list,meronyms_list,holonyms_list, entities_list, entity_labels_list)
-        except IOError as exc: #Not sure what error this is
+        except IOError as exc:
             if exc.errno != errno.EISDIR:
                 raise
 
@@ -65,6 +66,7 @@ def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSe
         doc_sentences[i]["hypernyms_list"] = hypernyms_list[i]
         doc_sentences[i]["hyponyms_list"] = hyponyms_list[i] 
         doc_sentences[i]["meronyms_list"] = meronyms_list[i]
+        doc_sentences[i]["holonyms_list"] = holonyms_list[i] 
         doc_sentences[i]["entities_list"] = entities_list[i]
         doc_sentences[i]["entity_labels_list"] = entity_labels_list[i]
     solr.add(doc_sentences, commit = True)

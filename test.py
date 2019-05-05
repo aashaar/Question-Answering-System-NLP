@@ -84,11 +84,31 @@ query = query[:-4]
 
 print(query[:-4])
 
+sentence_nlp = word_tokenize("Steve Jobs founded Apple in 1980")
+
+import spacy
+#nlp = spacy.load("en_core_web_sm")
+doc = nlp("Steve Jobs founded Apple in 1980 and went public in 1933") #("I shot an elephant in my sleep")
+#doc =nlp("Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne on 5th March April 1976 to develop and sell Wozniak's Apple I personal computer.")
+for token in doc:
+    print("{2}({3}-{6}, {0}-{5})".format(token.text, token.tag_, token.dep_, token.head.text, token.head.tag_, token.i+1, token.head.i+1))
+    if(token.text == "Apple"):
+        print("*********Verb is--> ", token.head.text)
+
+
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+doc = nlp(u"Autonomous cars shift insurance liability toward manufacturers")
+for token in doc:
+    print(token.text, token.dep_, token.head.text, token.head.pos_,
+            [child for child in token.children])
+
 
 
 """
 Query:
-    entites_list:"Abraham Lincoln" AND entity_labels_list: "DATE" AND (word_tokens : 'killed' OR lemmatize_word : 'killed' OR synonymns_list : 'die' OR hypernyms_list : 'die' OR hyponyms_list : 'die' OR meronyms_list : 'die' OR entites_list : 'die')
+    entities_list:"Abraham Lincoln" AND entity_labels_list: "DATE" AND (word_tokens : 'killed' OR lemmatize_word : 'killed' OR synonymns_list : 'die' OR hypernyms_list : 'die' OR hyponyms_list : 'die' OR meronyms_list : 'die' OR entities_list : 'die')
 
 links:
     https://stackoverflow.com/questions/39100652/python-chunking-others-than-noun-phrases-e-g-prepositional-using-spacy-etc

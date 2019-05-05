@@ -3,8 +3,8 @@ import string
 from nltk.tokenize import word_tokenize 
 import NLPFeatures as fl
 import en_core_web_sm
-import spacy
 nlp = en_core_web_sm.load()
+import spacy
 from nltk.corpus import wordnet as wn
 from nltk.stem import PorterStemmer
 ps = PorterStemmer()
