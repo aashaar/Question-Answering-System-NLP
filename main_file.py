@@ -15,19 +15,17 @@ lemmatizer = WordNetLemmatizer()
 #,"WHO is Abraham Lincoln killed?","Where is Abraham Lincoln killed?"
 solr = pysolr.Solr('http://localhost:8983/solr/test3', timeout=10)   
 
-#input_sentences = ["When was Abraham Lincoln killed?","Who founded Apple Inc.?","Who supported Apple in creating a new computing platform?","When was Apple Inc. founded?","When did Apple go public?","Where is Apple’s headquarters?","Where did Apple open its first retail store?","When did Abraham Lincoln die?",
-#                   "Where did Thomas Lincoln purchase farms?","When was the Gettysburg address by Abraham Lincoln?","Who founded UTD?"]
+input_sentences = ["Where was Melinda born?","Where is the birth place of Oprah Winfrey?",
+                   "Where is the headquarters of AT&T?"]
 
-#input_sentences = ["When did Apple go public?","When did Abraham Lincoln die?","Who was the chairman of Apple","Where did Thomas Lincoln purchase farms?"]#,"Who founded Apple Inc.?","When did Warren Buffett buy Berkshire Hathaway's shares?","Where did AT&T spread to South America?"]
 
-input_sentences = ["Who founded Apple Inc.?","Who supported Apple in creating a new computing platform?", "When was Apple Inc. founded?",
-                   "When did Apple go public?","Where is Apple’s headquarters?","Where did Apple open its first retail store?",
-                   "When did Abraham Lincoln die?","Where did Thomas Lincoln purchase farms?","When was the Gettysburg address by Abraham Lincoln?",
-                   "When was the Gettysburg address by Abraham Lincoln?","Who founded UTD?","When was UTD established?"]
-#query = "entites_list:'Abraham Lincoln' AND entity_labels_list: 'DATE' AND (word_tokens : 'killed' OR lemmatize_word : 'killed' OR synonymns_list : 'die' OR hypernyms_list : 'die' OR hyponyms_list : 'die' OR meronyms_list : 'die' OR entites_list : 'die')"
-#query = "entites_list:\"Abraham Lincoln\" AND entity_labels_list: \"DATE\" AND (word_tokens : 'killed' OR lemmatize_word : 'killed' OR synonymns_list : 'die' OR hypernyms_list : 'die' OR hyponyms_list : 'die' OR meronyms_list : 'die' OR entites_list : 'die')"
-#query = "entites_list:\"Abraham Lincoln\" AND entity_labels_list: \"DATE\" AND (word_tokens : \"killed\" OR lemmatize_word : \"killed\" OR synonymns_list : \"die\" OR hypernyms_list : \"die\" OR hyponyms_list : \"die\" OR meronyms_list : \"die\" OR entites_list : \"die\")"
-#query = "*:*"
+#input_sentences = ["Who founded Apple Inc.?","Who supported Apple in creating a new computing platform?", "When was Apple Inc. founded?",
+#                   "When did Apple go public?","Where is Apple’s headquarters?","Where did Apple open its first retail store?",
+#                   "When did Abraham Lincoln die?","Where did Thomas Lincoln purchase farms?","When was the Gettysburg address by Abraham Lincoln?",
+#                   "When was the Gettysburg address by Abraham Lincoln?","Who founded UTD?","When was UTD established?","Where was Melinda born?","Where is the birth place of Oprah Winfrey?",
+#                   "Where is the headquarters of AT&T?"]
+
+input_sentences = ["Who shot Abraham Lincoln?","Where is UTD located?"]
 
 
 stop_words = set(stopwords.words('english'))| set(string.punctuation)
@@ -36,16 +34,61 @@ for sentence in input_sentences:
     lower_sentence = sentence.lower()
     if "when" in lower_sentence:
         req_entity_type.extend(["\"DATE\"","\"TIME\""])
-        print("1") 
+ 
     elif "who" in lower_sentence:
         req_entity_type.extend(["\"PERSON\"","\"ORG\""])
-        print("2")
+        
     elif "where" in lower_sentence:
         req_entity_type.extend(["\"GPE\"","\"LOC\""])
-        print("3")
+        
     
     word_tokens = word_tokenize(lower_sentence) 
     filtered_question = [w for w in word_tokens if not w in stop_words]
+    filtered_sentence = " ".join(filtered_question)
+    a,b,c,d,e,f,g,h,i1,j = fl.getNLPFeatures(filtered_sentence)
+    word_tokens = ",".join(a)
+    lemmatize_word = ",".join(b)
+    rootOfSentence = ",".join(c)
+    synonymns_list = ",".join(d)
+    hypernyms_list = ",".join(e)
+    hyponyms_list = ",".join(f)
+    meronyms_list = ",".join(g)
+    holonyms_list = ",".join(h)
+    entities_list = ",".join(i1)
+    entities_labels_list = ",".join(j)
+    
+    
+    
+    query = "entity_labels_list:("+",".join(req_entity_type)+" ) AND "
+    
+    query += "((word_tokens:"+word_tokens+") OR (lemmatize_word:"+ lemmatize_word+") OR (synonymns_list:"+synonymns_list+") OR (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (meronyms_list:"+meronyms_list+") OR (holonyms_list:"+holonyms_list+"))"
+            
+    print("sentence:"+sentence)
+    print(query)
+    
+    
+    print("*************************************************")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     # Parts of Speech Tagging:
     POS_tags = []
     is_verb = lambda pos: pos[:2] == 'VB'
@@ -98,23 +141,3 @@ for sentence in input_sentences:
 #    for result in results:
 #       print("The title is '{0}','{1}'.".format(result['sentence'],result['name']))
 
-
-    
-    
-    
-synonymns_list = [] 
-hypernyms_list =[]
-hyponyms_list=[]
-meronyms_list = []
-holonyms_list = []
-
-word_tokens = ["die"]
-for word in word_tokens:
-    #print(word)
-    for i,j in enumerate(wn.synsets(word)):
-        synonymns_list.extend(wn.synset(j.name()).lemma_names())
-        hypernyms_list.extend(wn.synset(j.name()).hypernyms()) 
-        hyponyms_list.extend(wn.synset(j.name()).hyponyms())
-        meronyms_list.extend(wn.synset(j.name()).part_meronyms())
-        holonyms_list.extend(wn.synset(j.name()).part_holonyms())
-print(synonymns_list)

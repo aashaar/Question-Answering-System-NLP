@@ -50,7 +50,7 @@ def readFiles(path):
                     entity_labels_list.append(j)
                 indexSolr(nameOfFile,doc_sentences,sent_tokens,word_tokens,lemmatize_word,rootOfSentence,
                           synonymns_list,hypernyms_list,hyponyms_list,meronyms_list,holonyms_list, entities_list, entity_labels_list)
-        except IOError as exc:
+        except IOError as exc: #Not sure what error this is
             if exc.errno != errno.EISDIR:
                 raise
 
@@ -66,9 +66,10 @@ def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSe
         doc_sentences[i]["hypernyms_list"] = hypernyms_list[i]
         doc_sentences[i]["hyponyms_list"] = hyponyms_list[i] 
         doc_sentences[i]["meronyms_list"] = meronyms_list[i]
-        doc_sentences[i]["holonyms_list"] = holonyms_list[i] 
+        doc_sentences[i]["holonyms_list"] = holonyms_list[i]
         doc_sentences[i]["entities_list"] = entities_list[i]
         doc_sentences[i]["entity_labels_list"] = entity_labels_list[i]
+        
     solr.add(doc_sentences, commit = True)
     print("*******************Indexing done for the file ",name)
 #
