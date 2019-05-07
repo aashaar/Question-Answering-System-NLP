@@ -1,0 +1,24 @@
+utd, The University, Texas, University, Dallas, University of Texas at Dallas, The UT Dallas, The UTDallas
+Apple, Apple Inc, apple, Apple Inc.
+Oprah, Winfrey, Oprah Winfrey
+Berkshire, Berkshire Hathaway,Berkshire Hathaway's
+ExxonMobile, Exxon, Mobile, ExxonMobil, Exxon Mobil, Exxon Mobil Corporation
+Abraham, Abraham Lincoln, Lincoln, Thomas Lincoln, Thomas
+George, Washington, George Washington
+JPMorgan,J,P,Chase,JP,JPChase,Chasebank,J.P. Morgan Chase
+Warren,WarrenBuffet, Edward, Buffett,Warren Edward Buffett, Edward Buffett
+Gandhi, Gandhiji, MohandasGandhi, Karamchand, Mohandas Gandhi, Mohandas Karamchand Gandhi
+Walmart, Walmart Inc, walmart, Walmart Inc.
+Tesla, Tesla Inc, Tesla Motors, TeslaInc
+NYC, New York City, NewYork, NYCity, NY City
+Melinda, Ann, Gates, Melinda Ann,Melinda Gates
+Laurene, Powell, Jobs, Laurene Powell Jobs, Laurene Powell, Powell Jobs
+India, Bharat, Bhaarat, Bhaarath, Bharath, Hindustan
+citi, Citigroup, citicorp, citibank, Citigroup Inc.
+AT_T, AT, T, AT&T, ATnT
+birth, born
+kill, die, death, assassin, assassination, passed, pass, expired, expiry
+headquarters, hq, HQ, Hq
+Amazon, Amazon.com, amazon
+
+
