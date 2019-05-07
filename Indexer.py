@@ -61,7 +61,7 @@ def readFiles(path):
                 raise
 
 def indexSolr(name, doc_sentences,sentences, word_tokens,lemmatize_word,rootOfSentence,
-              synonymns_list,hypernyms_list,hyponyms_list,meronyms_list,holonyms_list,entities_list, entity_labels_list, stemmatize_word, dependency_parsed_tree):
+              synonymns_list,hypernyms_list,hyponyms_list,meronyms_list,holonyms_list,entities_list, entity_labels_list, stemmatize_word, dependency_parsed_tree, POS_tags):
     for i in range(0,len(sentences)):
         doc_sentences[i]["name"] = name
         doc_sentences[i]["sentence"] = sentences[i] 
