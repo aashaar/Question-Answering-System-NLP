@@ -96,7 +96,7 @@ def getNLPFeatures(sentence):
         entities.append(X.text)
         entity_labels.append(X.label_)        
     #print(set(hypernyms_list))
-    return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels, stemmatize_word, dependency_parsed_tree
+    return word_tokens,lemmatize_word,rootOfSentence,set(synonymns_list),set(hypernyms_list),set(hyponyms_list),set(meronyms_list),set(holonyms_list), entities, entity_labels, stemmatize_word, dependency_parsed_tree, POS_tags
     
      
 

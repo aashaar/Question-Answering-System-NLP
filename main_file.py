@@ -15,7 +15,7 @@ en_nlp =spacy.load('en_core_web_sm')
 from nltk.stem.wordnet import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
 
-solr = pysolr.Solr('http://localhost:8983/solr/test11', timeout=10)   
+solr = pysolr.Solr('http://localhost:8983/solr/final1', timeout=10)   
 
 #input_questions = ["Who founded Apple Inc.?","Who supported Apple in creating a new computing platform?", "When was Apple Inc. founded?",
 #                   "When did Apple go public?","Where is Apple’s headquarters?","Where did Apple open its first retail store?",
@@ -67,7 +67,7 @@ def processQuestions(input_questions):
         word_tokens = word_tokenize(lower_question) 
         filtered_question = [w for w in word_tokens if not w in stop_words]
         filtered_sentence = " ".join(filtered_question)
-        a,b,c,d,e,f,g,h,i1,j,k,l = fl.getNLPFeatures(filtered_sentence)
+        a,b,c,d,e,f,g,h,i1,j,k,l,m = fl.getNLPFeatures(filtered_sentence)
         word_tokens = ",".join(a) if len(a) != 0 else "*"
         lemmatize_word = ",".join(b) if len(b) != 0 else "*"
         rootOfSentence = ",".join(c) if len(c) != 0 else "*"

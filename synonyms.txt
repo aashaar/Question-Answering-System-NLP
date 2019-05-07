@@ -20,5 +20,3 @@ birth, born
 kill, die, death, assassin, assassination, passed, pass, expired, expiry
 headquarters, hq, HQ, Hq
 Amazon, Amazon.com, amazon
-
-
