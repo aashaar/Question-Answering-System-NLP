@@ -6,6 +6,28 @@ open cmd at bin's location of solr file- >
 see: localhost:8983
 >> solr create -c test2
 
+>> solr delete -c test2
+
+solr-8.0.0\solr-8.0.0\server\solr\final1\conf\managed-schema
+using keyword "text_general" find ---> 
+<fieldType name="text_general" class="solr.TextField" positionIncrementGap="100" multiValued="true">
+
+inside this, uncomment following two lines: (by shifting --> 2 lines up)
+
+Before:
+
+<!-- in this example, we will only use synonyms at query time
+        
+<filter class="solr.SynonymGraphFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+    <filter class="solr.FlattenGraphFilterFactory"/> -->
+
+After:
+<!-- in this example, we will only use synonyms at query time-->
+        
+<filter class="solr.SynonymGraphFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+    <filter class="solr.FlattenGraphFilterFactory"/>
+
+
 for spacy(en_core_web_sm ):
 conda install -c conda-forge spacy-model-en_core_web_sm 
 
