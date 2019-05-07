@@ -14,21 +14,20 @@ import json
 en_nlp =spacy.load('en_core_web_sm')
 from nltk.stem.wordnet import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
-#,"WHO is Abraham Lincoln killed?","Where is Abraham Lincoln killed?"
-solr = pysolr.Solr('http://localhost:8983/solr/test3', timeout=10)   
 
-input_sentences = ["Where was Melinda born?","Where is the birth place of Oprah Winfrey?",
-                   "Where is the headquarters of AT&T?"]
+solr = pysolr.Solr('http://localhost:8983/solr/test11', timeout=10)   
 
-
-#input_sentences = ["Who founded Apple Inc.?","Who supported Apple in creating a new computing platform?", "When was Apple Inc. founded?",
+#input_questions = ["Who founded Apple Inc.?","Who supported Apple in creating a new computing platform?", "When was Apple Inc. founded?",
 #                   "When did Apple go public?","Where is Apple’s headquarters?","Where did Apple open its first retail store?",
 #                   "When did Abraham Lincoln die?","Where did Thomas Lincoln purchase farms?","When was the Gettysburg address by Abraham Lincoln?",
 #                   "When was the Gettysburg address by Abraham Lincoln?","Who founded UTD?","When was UTD established?","Where was Melinda born?","Where is the birth place of Oprah Winfrey?",
 #                   "Where is the headquarters of AT&T?"]
 
-input_questions = ["When did Warren Buffett buy Berkshire Hathaway's shares?","When did Steve Jobs die?","Where is the headquarters of Exxon Mobil?","When was ExxonMobile created?","Where is the headquarters of Amazon.com?"]
-input_questions = ["When did Apple go public?","When was the Gettysburg address by Abraham Lincoln?"]
+#input_questions = ["When did Warren Buffett buy Berkshire Hathaway's shares?","When did Steve Jobs die?","Where is the headquarters of Exxon Mobil?","When was ExxonMobile created?","Where is the headquarters of Amazon.com?"]
+#input_questions = ["When did Apple go public?","When was the Gettysburg address by Abraham Lincoln?"]
+
+#readQuestions('questions.txt')
+
 def readQuestions(fileName):
     with open(fileName, 'r') as f:
         temp = f.read().splitlines()
@@ -68,25 +67,31 @@ def processQuestions(input_questions):
         word_tokens = word_tokenize(lower_question) 
         filtered_question = [w for w in word_tokens if not w in stop_words]
         filtered_sentence = " ".join(filtered_question)
-        a,b,c,d,e,f,g,h,i1,j = fl.getNLPFeatures(filtered_sentence)
-        word_tokens = ",".join(a)
-        lemmatize_word = ",".join(b)
-        rootOfSentence = ",".join(c)
-        synonymns_list = ",".join(d)
-        hypernyms_list = ",".join(e)
-        hyponyms_list = ",".join(f)
-        meronyms_list = ",".join(g)
-        holonyms_list = ",".join(h)
-        entities_list = ",".join(i1)
-        entities_labels_list = ",".join(j)
+        a,b,c,d,e,f,g,h,i1,j,k,l = fl.getNLPFeatures(filtered_sentence)
+        word_tokens = ",".join(a) if len(a) != 0 else "*"
+        lemmatize_word = ",".join(b) if len(b) != 0 else "*"
+        rootOfSentence = ",".join(c) if len(c) != 0 else "*"
+        synonymns_list = ",".join(d) if len(d) != 0 else "*"
+        hypernyms_list = ",".join(e) if len(e) != 0 else "*"
+        hyponyms_list = ",".join(f) if len(f) != 0 else "*"
+        meronyms_list = ",".join(g) if len(g) != 0 else "*"
+        holonyms_list = ",".join(h) if len(h) != 0 else "*"
+        entities_list = ",".join(i1) if len(i1) != 0 else "*"
+        entities_labels_list = ",".join(j) if len(j) != 0 else "*"
+        stemmatize_word = ",".join(k) if len(k) != 0 else "*"
         
         
         
-        query = "entity_labels_list:("+",".join('{0}'.format(w) for w in (req_entity_type))+" )^10 AND "
-        
-        query += "((word_tokens:"+word_tokens+")^10 OR (lemmatize_word:"+ lemmatize_word+") OR (synonymns_list:"+synonymns_list+") OR (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (meronyms_list:"+meronyms_list+") OR (holonyms_list:"+holonyms_list+"))"
+        #query = "entity_labels_list:("+",".join('{0}'.format(w) for w in (req_entity_type))+" )^10 AND "
+        #query += "((word_tokens:"+word_tokens+")^10 OR (lemmatize_word:"+ lemmatize_word+") OR (synonymns_list:"+synonymns_list+") OR (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (meronyms_list:"+meronyms_list+") OR (holonyms_list:"+holonyms_list+"))"
                 
+        query = "entity_labels_list:("+",".join(req_entity_type)+" )^10 AND "
+        query += "((word_tokens:"+word_tokens+")^10 AND (lemmatize_word:"+ lemmatize_word+") AND (synonymns_list:"+synonymns_list+") AND \
+        (hypernyms_list:"+hypernyms_list+") AND (hyponyms_list:"+hyponyms_list+") AND (meronyms_list:"+meronyms_list+") AND \
+        (holonyms_list:"+holonyms_list+") OR (entities_list:"+entities_list+")^10 OR (stemmatize_word:"+stemmatize_word+"))"
+            
         #print("sentence:"+sentence)
+        #print(query)
         
         print("Query created for the question")
         #print(query)
@@ -98,14 +103,9 @@ def processQuestions(input_questions):
         answer,sentence,document = getAnswer(query,term1,term2)
         writeToJSON(question,answer,sentence,document)
         print("Processing complete!\n")
-    print("******************Program execution finished ******************")
+    print("*********Program execution finished *********")
     
-    
-    
-    
-    
-    
-    
+  
     
     
 def getAnswer(query,term1,term2):
@@ -157,59 +157,3 @@ def writeToJSON(question, answer, sentence, docName):
     with open('answers.json', 'w') as json_file:  # writing JSON object
         json.dump(data, json_file)
     print("JSON file updated!")
-    
-################################    
-    
-    
-    # Parts of Speech Tagging:
-    POS_tags = []
-    is_verb = lambda pos: pos[:2] == 'VB'
-    verbs = [ps.stem(word) for (word, pos) in nltk.pos_tag(filtered_question) if is_verb(pos)]
-    
-    mVerbs = []
-    for verb in verbs:
-        mVerbs.append("\""+verb+"\"")
-    
-    verbQuery = ",".join(mVerbs) 
-    #verbQuery = "hypernyms_list:("+",".join(mVerbs)+" ) AND "
-    
-    #print(verbQuery)
-    
-    
-    #print("**************************************")
-    
-    query= "entity_labels_list:("+",".join(req_entity_type)+" ) AND "
-    query += "(synonymns_list:"+verbQuery+" OR hypernyms_list:"+verbQuery+" OR meronyms_list:"+verbQuery+" OR hyponyms_list:"+verbQuery+") AND "
-    
-    #print(query)
-    for token in filtered_question:
-        query += "(word_tokens:\""+token+"\" OR lemmatize_word:\""+lemmatizer.lemmatize(token)+"\" OR synonymns_list:\""+token+"\" OR hypernyms_list:\""+token+"\" OR meronyms_list:\""+token+"\" OR entities_list:\""+token+"\") AND "
-    query = query[:-4]
-    print(query)
-    print("*********************************************************************************")
-    results = solr.search(q=query,start=0, rows=10000)
-    print("length of the results", len(results))
-    for result in results:
-        print("The title is '{0}','{1}'.".format(result['sentence'],result['name']))
-    ###################################### Commented block aplha starts
-    #example o/p: 
-     #   When was Abraham Lincoln killed?
-      #  killed ['Abraham Lincoln'] ['PERSON'] ['DATE', 'TIME']
-    #doc = en_nlp(sentence)
-    #sent= list(doc.sents)
-    #for s in sent:
-    #   rootOfSentence = s.root.text
-    #doc = nlp(sentence)
-    #for X in doc.ents:
-    #    entities.append(X.text)
-    #    entity_labels.append(X.label_)
-    #print(sentence)
-    #print(rootOfSentence, entities, entity_labels, req_entity_type)
-    #print("*********************************")
-    ##################################### Commented block aplha end
-    
-#    results = solr.search(q=query,start=0, rows=10000)
-#    print("length of the results", len(results))
-#    for result in results:
-#       print("The title is '{0}','{1}'.".format(result['sentence'],result['name']))
-

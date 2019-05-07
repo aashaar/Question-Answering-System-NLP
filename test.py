@@ -95,7 +95,8 @@ doc =nlp("The Lincolns' last descendant, great-grandson Robert Todd Lincoln Beck
 for token in doc:
     print("{2}({3}-{6}, {0}-{5})".format(token.text, token.tag_, token.dep_, token.head.text, token.head.tag_, token.i+1, token.head.i+1))
     if(token.text == "Apple"):
-        print("*********Verb is--> ", token.head.text)
+        temp = token
+        print("*********Verb is--> ", temp.head.text)
 
 
 import spacy
@@ -197,12 +198,95 @@ def writeToJSON(question, answer, sentence, docName):
     
     
 with open('questions.txt', 'r') as f:
-    x = f.readlines()
+    temp = f.read().splitlines()
 
 doc = nlp(sentence)
 for X in doc.ents:
     entities.append(X.text)
     entity_labels.append(X.label_)  
+
+
+term1="DATE"
+term2="TIME"
+
+term1="PERSON"
+term2="ORG"
+
+term1="GPE"
+term2="LOC"
+sentence = "Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell Wozniak's Apple I personal computer."
+sentence = "In 1994, Apple, IBM, and Motorola formed the AIM alliance with the goal of creating a new computing platform (the PowerPC Reference Platform), which would use IBM and Motorola hardware coupled with Apple software."
+sentence = "The UT Dallas founders, Eugene McDermott, Cecil Howard Green and J. Erik Jonsson, purchased Geophysical Service Incorporated (GSI) on December 6, 1941, the day before the attack on Pearl Harbor."
+sentence = "Steve Jobs and Maci founded UTD"
+
+sentence = "On June 13, 1969 Governor Preston Smith signed the bill adding the institution to the University of Texas System and creating the University of Texas at Dallas."
+doc = nlp(sentence)
+answer = ""
+for X in doc.ents:
+    if(X.label_ == term1 or X.label_ == term2):
+        answer += X.text + ","
+    #print("Answer is--> ",X.text)
+#if(answer[:-1].isnumeric()):
+print(answer[:-1] )
+for token in doc:
+    print("{2}({3}-{6}, {0}-{5})".format(token.text, token.tag_, token.dep_, token.head.text, token.head.tag_, token.i+1, token.head.i+1))
+for np in doc.noun_chunks:
+    print(np)
+
+sent= list(doc.sents)
+for s in sent:
+    rootOfSentence = s.root.text
+
+#rootOfSentence = 'a'
+    
+
+for chunk in doc.noun_chunks:
+    if is_active(chunk):
+        #print("###",chunk.text)
+        #print("####",chunk.root.text)
+        #print("####",chunk.root.head.dep_)
+        print("chunk", chunk)
+        print("chunk.root.dep_",chunk.root.dep_)
+        if(chunk.root.dep_ == 'nsubj'):  
+            if(chunk.root.head.text == rootOfSentence):
+                print(chunk)
+        if(chunk.root.dep_ == 'conj'):
+                print(chunk)
+    else:
+        print("***",chunk.text)
+        print("****",chunk.root.dep_)
+        if(chunk.root.dep_ == 'pobj'):
+            if(chunk.root.head.head.text == rootOfSentence):
+                print(chunk)
+        elif(chunk.root.dep_ == 'conj'):
+            print(chunk)
+
+def get_noun_chunks(doc):
+    nn_chunk = []
+    for chunk in doc.noun_chunks:
+        nn_chunk.append(chunk)
+    return nn_chunk
+nn_chunk = get_noun_chunks(doc)
+
+def is_active(doc):
+    for token in doc:
+        if ('pass' in token.dep_):
+            return False
+    return True
+
+
+def extract_when(ners):
+    for ent in ners:
+        if ent.label_.lower() in ['date', 'time']:
+            if ent.root.head.text.lower() in ['in', 'on', 'since']:
+                prev = ent.root.head
+                while not (prev.dep_.lower() == 'root') and not (prev.pos_.lower() == 'verb'): 
+                    prev = prev.head
+                # if prev == verb:
+#                 template.when = ent.text
+                    return ent.text
+
+
 
 """
 Query:
