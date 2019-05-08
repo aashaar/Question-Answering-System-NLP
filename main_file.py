@@ -46,6 +46,8 @@ def processQuestions(input_questions):
     term2=""
     stop_words = set(stopwords.words('english'))| set(string.punctuation)
     for question in input_questions:
+        if (len(question) == 0) or (question == ""): # if question string is empty
+            continue
         print("Started processing for question -> ", question)
         req_entity_type = []
         lower_question = question.lower()
@@ -65,7 +67,7 @@ def processQuestions(input_questions):
             term2="LOC"
             
         
-        word_tokens = word_tokenize(lower_question) 
+        word_tokens = word_tokenize(question) 
         filtered_question = [w for w in word_tokens if not w in stop_words]
         filtered_sentence = " ".join(filtered_question)
         a,b,c,d,e,f,g,h,i1,j,k,l,m = fl.getNLPFeatures(filtered_sentence)
@@ -97,11 +99,10 @@ def processQuestions(input_questions):
         print("Query created for the question")
         #print(query)
         
-        
         #print("*************************************************")
     
         ######## call function to get Answer to the query
-        answer,sentence,document = getAnswer(query,term1,term2)
+        answer,sentence,document = getAnswer(query,term1,term2,entities_list)
         writeToJSON(question,answer,sentence,document)
         print("Processing complete!\n")
     print("*********Program execution finished *********")
@@ -109,21 +110,47 @@ def processQuestions(input_questions):
   
     
     
-def getAnswer(query,term1,term2):
+def getAnswer(query,term1,term2,entities_list):
     results = None
     results = solr.search(q=query,start=0, rows=1)
-
+    if len(results) == 0:
+        return "Answer not found", "N.A.", "N.A."
     #print("length of the results", len(results))
+    #counter = 0
     for result in results:
+        ######## code to check entities
+        #counter += 1
+        #ans_entity_list = result['entities_list']
+        #flag = False
+        #for e1 in ans_entity_list:
+            #for e2 in  entities_list:
+                #if((e1 in e2) or (e2 in e1)):
+                    #flag = True
+                    #break
+            #if(flag==True):
+                #break
+        #if(not flag and counter<len(results)-1):
+            #continue
+        
+            
+        
         #print("The title is '{0}','{1}'.".format(result['sentence'],result['name']))
         doc = nlp(str(result['sentence']))
         answer = ""
         for X in doc.ents:
             if(X.label_ == term1 or X.label_ == term2):
-                answer += X.text + ","
+                if(term1 == 'PERSON'):
+                    #print(result['sentence'],"::",X.text,"**", entities_list)
+                    if (not (str(X.text) in entities_list)): #return first answer for WHO questions
+                        answer = X.text
+                        break
+                else:
+                    answer = X.text
+                    break                       
             #print("Answer is--> ",X.text)
     #if(answer[:-1].isnumeric()):
-        return answer[:-1], result['sentence'][0], result['name'][0]
+        #return answer[:-1], result['sentence'][0], result['name'][0]
+        return answer, result['sentence'][0], result['name'][0]
 
 
 ##########

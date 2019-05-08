@@ -286,6 +286,14 @@ def extract_when(ners):
 #                 template.when = ent.text
                     return ent.text
 
+elist = ["1994",
+          "Apple",
+          "IBM",
+          "Motorola",
+          "the PowerPC Reference Platform",
+          "IBM",
+          "Motorola",
+          "Apple"]
 
 
 """
