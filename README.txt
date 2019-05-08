@@ -14,15 +14,21 @@
 	
 	> pip install -r requirements.txt
 
->> Run the file from command line:
+>> Run the question-answering program file from command line:
 	
 	> python main_file.py <name_of_file.txt>
+	(where <name_of_file.txt> is the file with questions.)
 
->> Run the file from Spyder IDE:
+>> Run the question-answering program file from Spyder IDE:
 	
-	> Open Run >> configurationsperfile 
-	> Enable Command Line Options and enter <name_of_file.txt> in the textbox adjacent to it.
+	> Open main_file.py in the IDE.
+	> Go to Run >> configurationsperfile 
+	> Enable Command Line Options and enter <name_of_file.txt> in the textbox adjacent to it. (where <name_of_file.txt> is the file with questions.)
 	> Click on "Run"
+
+>> To index Solr: (Note: This step would take a lot of time)
+	> Run NLPFeatures.py
+	> Run Indexer.py
 	
 
 
