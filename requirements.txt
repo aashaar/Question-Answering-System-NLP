@@ -1,0 +1,10 @@
+en_core_web_sm
+spacy
+pysolr
+json
+nltk
+glob
+
+
+
+

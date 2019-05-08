@@ -14,6 +14,7 @@ import json
 en_nlp =spacy.load('en_core_web_sm')
 from nltk.stem.wordnet import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
+import sys
 
 solr = pysolr.Solr('http://localhost:8983/solr/final1', timeout=10)   
 
@@ -26,7 +27,7 @@ solr = pysolr.Solr('http://localhost:8983/solr/final1', timeout=10)
 #input_questions = ["When did Warren Buffett buy Berkshire Hathaway's shares?","When did Steve Jobs die?","Where is the headquarters of Exxon Mobil?","When was ExxonMobile created?","Where is the headquarters of Amazon.com?"]
 #input_questions = ["When did Apple go public?","When was the Gettysburg address by Abraham Lincoln?"]
 
-#readQuestions('questions.txt')
+
 
 def readQuestions(fileName):
     with open(fileName, 'r') as f:
@@ -157,3 +158,10 @@ def writeToJSON(question, answer, sentence, docName):
     with open('answers.json', 'w') as json_file:  # writing JSON object
         json.dump(data, json_file)
     print("JSON file updated!")
+
+if __name__ == '__main__':
+    path = ""
+    path = sys.argv[1]
+    #print("path= ",path)
+    readQuestions(path)
+    
