@@ -45,10 +45,11 @@ def readQuestions(fileName):
 
 
 def processQuestions(input_questions): 
-    term1=""
-    term2=""
+    
     stop_words = set(stopwords.words('english'))| set(string.punctuation)
     for question in input_questions:
+        term1=""
+        term2=""
         if (len(question) == 0) or (question == ""): # if question string is empty
             continue
         print("Started processing for question -> ", question)
@@ -68,8 +69,9 @@ def processQuestions(input_questions):
             req_entity_type.extend(["\"GPE\"","\"LOC\""])
             term1="GPE"
             term2="LOC"
-            
-        
+        else:   
+            req_entity_type.extend("*")
+             
         word_tokens = word_tokenize(question) 
         filtered_question = [w for w in word_tokens if not w in stop_words]
         filtered_sentence = " ".join(filtered_question)
@@ -118,9 +120,13 @@ def processQuestions(input_questions):
     
 def getAnswer(query,term1,term2,entities_list):
     results = None
+    #print("term1", term1)
+    if term1 == "" or term2 == "": # if an invalid question type is provided.
+        return "WARNING: Question type not recognized", "N.A.", "N.A."
     results = solr.search(q=query,start=0, rows=10)
     if len(results) == 0:
         return "Answer not found", "N.A.", "N.A."
+
     #print("length of the results", len(results))
     counter = 0
     for result in results:
