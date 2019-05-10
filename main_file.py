@@ -100,7 +100,7 @@ def processQuestions(input_questions):
         (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (stemmatize_word:"+stemmatize_word+")^10 AND (entities_list:"+entities_list+")^20)"
         
         #print("sentence:"+sentence)
-        print(query)
+        #print(query)
         
         print("Query created for the question")
         #print(query)
