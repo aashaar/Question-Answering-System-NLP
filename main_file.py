@@ -124,7 +124,7 @@ def getAnswer(query,term1,term2,entities_list):
     #print("length of the results", len(results))
     counter = 0
     for result in results:
-        print(result['sentence'])
+        #print(result['sentence'])
         ######## code to check entities
         #counter += 1
 #        ans_entity_list = result['entities_list']
