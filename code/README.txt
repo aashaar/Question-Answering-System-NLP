@@ -16,13 +16,11 @@
 
 >> Run the question-answering program file from command line:
 	
-	> python NLPFeatures.py
 	> python main_file.py <name_of_file.txt>
 	(where <name_of_file.txt> is the file with questions.)
 
 >> Run the question-answering program file from Spyder IDE:
 	
-	> Open and run NLPFeatures.py
 	> Open main_file.py in the IDE.
 	> Go to Run >> configurationsperfile 
 	> Enable Command Line Options and enter <name_of_file.txt> in the textbox adjacent to it. (where <name_of_file.txt> is the file with questions.)
@@ -32,6 +30,7 @@
 	> Run NLPFeatures.py
 	> Run Indexer.py
 	
+
 
 
 

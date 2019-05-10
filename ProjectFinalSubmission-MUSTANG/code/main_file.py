@@ -88,14 +88,11 @@ def processQuestions(input_questions):
         #query = "entity_labels_list:("+",".join('{0}'.format(w) for w in (req_entity_type))+" )^10 AND "
         #query += "((word_tokens:"+word_tokens+")^10 OR (lemmatize_word:"+ lemmatize_word+") OR (synonymns_list:"+synonymns_list+") OR (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (meronyms_list:"+meronyms_list+") OR (holonyms_list:"+holonyms_list+"))"
                 
-        query = "entity_labels_list:("+",".join(req_entity_type)+" )^20 AND "
-        #query += "((word_tokens:"+word_tokens+")^10 AND (lemmatize_word:"+ lemmatize_word+") AND (synonymns_list:"+synonymns_list+") AND \
-        #(hypernyms_list:"+hypernyms_list+") AND (hyponyms_list:"+hyponyms_list+") AND (meronyms_list:"+meronyms_list+") AND \
-        #(holonyms_list:"+holonyms_list+") OR (entities_list:"+entities_list+")^10 OR (stemmatize_word:"+stemmatize_word+"))"
+        query = "entity_labels_list:("+",".join(req_entity_type)+" )^10 AND "
+        query += "((word_tokens:"+word_tokens+")^10 AND (lemmatize_word:"+ lemmatize_word+") AND (synonymns_list:"+synonymns_list+") AND \
+        (hypernyms_list:"+hypernyms_list+") AND (hyponyms_list:"+hyponyms_list+") AND (meronyms_list:"+meronyms_list+") AND \
+        (holonyms_list:"+holonyms_list+") OR (entities_list:"+entities_list+")^10 OR (stemmatize_word:"+stemmatize_word+"))"
             
-        query += "((word_tokens:"+word_tokens+")^20 OR (lemmatize_word:"+ lemmatize_word+")^10 OR (synonymns_list:"+synonymns_list+")^10 OR \
-        (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (stemmatize_word:"+stemmatize_word+")^10 AND (entities_list:"+entities_list+")^20)"
-        
         #print("sentence:"+sentence)
         #print(query)
         
