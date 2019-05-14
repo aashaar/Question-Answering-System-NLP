@@ -30,22 +30,26 @@ solr = pysolr.Solr('http://localhost:8983/solr/final1', timeout=10)
 
 
 def readQuestions(fileName):
-    with open(fileName, 'r') as f:
-        temp = f.read().splitlines()
-    #function call to delete existing answers.json file if it exists:
-    deleteJSONFile()
-    
-    #function call to process questions
-    processQuestions(temp)
-    #return temp
+    if(os.path.isfile(fileName)):
+        with open(fileName, 'r') as f:
+            temp = f.read().splitlines()
+        #function call to delete existing answers.json file if it exists:
+        deleteJSONFile()
+        
+        #function call to process questions
+        processQuestions(temp)
+        #return temp
+    else:
+        print("ERROR: Please provide a valid path for the questions file in the arguments.")
 
 
 
 def processQuestions(input_questions): 
-    term1=""
-    term2=""
+    
     stop_words = set(stopwords.words('english'))| set(string.punctuation)
     for question in input_questions:
+        term1=""
+        term2=""
         if (len(question) == 0) or (question == ""): # if question string is empty
             continue
         print("Started processing for question -> ", question)
@@ -65,8 +69,9 @@ def processQuestions(input_questions):
             req_entity_type.extend(["\"GPE\"","\"LOC\""])
             term1="GPE"
             term2="LOC"
-            
-        
+        else:   
+            req_entity_type.extend("*")
+             
         word_tokens = word_tokenize(question) 
         filtered_question = [w for w in word_tokens if not w in stop_words]
         filtered_sentence = " ".join(filtered_question)
@@ -88,11 +93,14 @@ def processQuestions(input_questions):
         #query = "entity_labels_list:("+",".join('{0}'.format(w) for w in (req_entity_type))+" )^10 AND "
         #query += "((word_tokens:"+word_tokens+")^10 OR (lemmatize_word:"+ lemmatize_word+") OR (synonymns_list:"+synonymns_list+") OR (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (meronyms_list:"+meronyms_list+") OR (holonyms_list:"+holonyms_list+"))"
                 
-        query = "entity_labels_list:("+",".join(req_entity_type)+" )^10 AND "
-        query += "((word_tokens:"+word_tokens+")^10 AND (lemmatize_word:"+ lemmatize_word+") AND (synonymns_list:"+synonymns_list+") AND \
-        (hypernyms_list:"+hypernyms_list+") AND (hyponyms_list:"+hyponyms_list+") AND (meronyms_list:"+meronyms_list+") AND \
-        (holonyms_list:"+holonyms_list+") OR (entities_list:"+entities_list+")^10 OR (stemmatize_word:"+stemmatize_word+"))"
+        query = "entity_labels_list:("+",".join(req_entity_type)+" )^20 AND "
+        #query += "((word_tokens:"+word_tokens+")^10 AND (lemmatize_word:"+ lemmatize_word+") AND (synonymns_list:"+synonymns_list+") AND \
+        #(hypernyms_list:"+hypernyms_list+") AND (hyponyms_list:"+hyponyms_list+") AND (meronyms_list:"+meronyms_list+") AND \
+        #(holonyms_list:"+holonyms_list+") OR (entities_list:"+entities_list+")^10 OR (stemmatize_word:"+stemmatize_word+"))"
             
+        query += "((word_tokens:"+word_tokens+")^20 OR (lemmatize_word:"+ lemmatize_word+")^10 OR (synonymns_list:"+synonymns_list+")^10 OR \
+        (hypernyms_list:"+hypernyms_list+") OR (hyponyms_list:"+hyponyms_list+") OR (stemmatize_word:"+stemmatize_word+")^10 AND (entities_list:"+entities_list+")^20)"
+        
         #print("sentence:"+sentence)
         #print(query)
         
@@ -112,36 +120,48 @@ def processQuestions(input_questions):
     
 def getAnswer(query,term1,term2,entities_list):
     results = None
-    results = solr.search(q=query,start=0, rows=1)
+    #print("term1", term1)
+    if term1 == "" or term2 == "": # if an invalid question type is provided.
+        return "WARNING: Question type not recognized", "N.A.", "N.A."
+    results = solr.search(q=query,start=0, rows=10)
     if len(results) == 0:
         return "Answer not found", "N.A.", "N.A."
+
     #print("length of the results", len(results))
-    #counter = 0
+    counter = 0
     for result in results:
+        #print(result['sentence'])
         ######## code to check entities
         #counter += 1
-        #ans_entity_list = result['entities_list']
-        #flag = False
-        #for e1 in ans_entity_list:
-            #for e2 in  entities_list:
-                #if((e1 in e2) or (e2 in e1)):
-                    #flag = True
-                    #break
-            #if(flag==True):
-                #break
-        #if(not flag and counter<len(results)-1):
-            #continue
+#        ans_entity_list = result['entities_list']
+#        flag = False
+#        print((ans_entity_list))
+#        print((entities_list))
+#        for e1 in ans_entity_list:
+#            for e2 in  entities_list:
+#                print(e1+":::"+e2)
+#                if((e1 in e2) or (e2 in e1)):
+#                    print("flag made true")
+#                    flag = True
+#                    break
+#            if(flag==True):
+#                break
+#        if(not flag and counter<len(results)-1):
+#            continue
         
             
         
         #print("The title is '{0}','{1}'.".format(result['sentence'],result['name']))
-        doc = nlp(str(result['sentence']))
+        doc = nlp(str(result['sentence'][0]))
         answer = ""
         for X in doc.ents:
             if(X.label_ == term1 or X.label_ == term2):
+                ######### for WHO questions: ensure that that ensure that answer is not same/
+                # as the question's main entity. ex: Who founded Apple? shouldn't return 'Apple'
                 if(term1 == 'PERSON'):
-                    #print(result['sentence'],"::",X.text,"**", entities_list)
-                    if (not (str(X.text) in entities_list)): #return first answer for WHO questions
+                    #print(type(result['sentence'][0]),"::",X.text,"**", entities_list)
+                    if (not (X.text in entities_list)):# filter out the entity in question from the answer
+                        #print("X.text",X.text)
                         answer = X.text
                         break
                 else:
@@ -150,6 +170,10 @@ def getAnswer(query,term1,term2,entities_list):
             #print("Answer is--> ",X.text)
     #if(answer[:-1].isnumeric()):
         #return answer[:-1], result['sentence'][0], result['name'][0]
+        counter += 1
+        if(len(answer)==0 and counter<10):
+            continue
+        
         return answer, result['sentence'][0], result['name'][0]
 
 
